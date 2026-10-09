@@ -1,0 +1,325 @@
+# Cybersecurity Technical Round — Complete Preparation Prompt
+
+Act as an expert technical interviewer and mentor. Prepare me for a cybersecurity technical interview covering Computer Science fundamentals, Networking, Cybersecurity, IAM, AI/ML, and DevOps.
+
+## Instructions
+
+* Cover every topic and subtopic listed below without skipping essential concepts.
+* Explain concepts from fundamentals to interview-ready understanding, using simple, technically accurate language.
+* Provide sufficient detail to answer technical interview questions confidently, but avoid unnecessarily deep explanations.
+* Explain **what it is, how it works, why it is used, and where it is used** wherever relevant.
+* Use real-world examples, practical scenarios, and analogies when they improve understanding.
+* Use diagrams, flowcharts, tables, and ASCII diagrams wherever they help explain architecture, workflows, protocols, handshakes, algorithms, or processes.
+* Include important definitions, terminology, differences, advantages, disadvantages, use cases, limitations, and common misconceptions.
+* Explain the underlying logic and step-by-step execution of important mechanisms.
+* Include essential formulas, commands, code snippets, SQL queries, and output examples wherever relevant.
+* For algorithms, protocols, queries, and workflows, provide step-by-step dry runs where useful.
+* Explicitly explain how concepts connect to cybersecurity and practical security scenarios.
+* Include commonly confused concepts and comparisons, such as process vs thread, TCP vs UDP, authentication vs authorization, encryption vs hashing, IDS vs IPS, and containers vs virtual machines.
+* Cover essential interview-relevant concepts even if they are missing from the supplied syllabus.
+* Explain technical acronyms in full the first time they appear.
+* Avoid unnecessary historical details, repetition, generic introductions, and advanced research-level material unless essential.
+* Do not merely list definitions. Ensure I understand the concepts well enough to explain them in my own words.
+* Organize the material into logical sections and teach one section at a time.
+* Do not skip topics just to keep the response short. If the material is too long, divide it into numbered parts and continue systematically.
+
+## 1. Core Computer Science
+
+### Operating Systems
+
+* Operating system fundamentals, kernel, user mode vs kernel mode, system calls, and OS responsibilities.
+* Processes vs threads, process states, process control blocks, context switching, and inter-process communication.
+* Multithreading, concurrency vs parallelism, race conditions, critical sections, mutexes, semaphores, and synchronization.
+* CPU scheduling: FCFS, SJF, SRTF, Priority Scheduling, and Round Robin.
+* Deadlocks: necessary conditions, prevention, avoidance, detection, and recovery.
+* Memory management, virtual memory, paging, segmentation, page tables, page faults, TLB, and page replacement algorithms.
+* Stack vs heap, user space vs kernel space, fragmentation, and swapping.
+* File systems, file permissions, users, groups, processes, services, and privilege escalation fundamentals.
+* Operating system security, isolation, least privilege, and access control.
+
+### DBMS and SQL
+
+* DBMS vs RDBMS, tables, schemas, rows, columns, keys, and relationships.
+* Primary keys, foreign keys, candidate keys, composite keys, unique constraints, and referential integrity.
+* SQL fundamentals: SELECT, WHERE, ORDER BY, GROUP BY, HAVING, aggregate functions, and subqueries.
+* SQL joins: INNER, LEFT, RIGHT, FULL OUTER, CROSS, and SELF JOIN, with diagrams and sample tables.
+* SQL commands: DDL, DML, DQL, DCL, and TCL.
+* Normalization: 1NF, 2NF, 3NF, and BCNF fundamentals.
+* Transactions, ACID properties, isolation levels, dirty reads, non-repeatable reads, and phantom reads.
+* Indexes, clustered vs non-clustered indexes, query execution, and basic query optimization.
+* Views, stored procedures, triggers, and database constraints.
+* SQL injection, parameterized queries, database permissions, encryption, and secure database design.
+* Relational vs NoSQL databases and their common use cases.
+
+### Object-Oriented Programming
+
+* Classes, objects, attributes, methods, constructors, and destructors.
+* Encapsulation, abstraction, inheritance, and polymorphism.
+* Compile-time vs runtime polymorphism, method overloading vs overriding.
+* Interfaces vs abstract classes, composition vs inheritance, and association relationships.
+* Access modifiers, static members, instance members, and the `this`/`self` concept.
+* SOLID principles and basic design patterns.
+* Exception handling, modularity, code reusability, and maintainability.
+* Secure coding, input validation, and avoiding common programming vulnerabilities.
+
+### Essential Data Structures and Algorithms
+
+* Arrays, linked lists, stacks, queues, hash tables, trees, binary search trees, heaps, graphs, and tries.
+* Linear search, binary search, sorting fundamentals, recursion, and traversal algorithms.
+* Time and space complexity, Big-O notation, and common complexity classes.
+* Hashing, collision handling, and hash table operations.
+* Why data structures and algorithmic efficiency matter in security tools, log processing, and threat detection.
+
+## 2. Networking Fundamentals
+
+* Network fundamentals: LAN, WAN, WLAN, PAN, client-server, peer-to-peer, bandwidth, latency, throughput, and packet loss.
+* Network devices: hub, switch, router, modem, gateway, bridge, repeater, access point, and firewall.
+* OSI seven-layer model and TCP/IP model, including each layer's function, protocols, devices, and examples.
+* Encapsulation and decapsulation, data units, MAC addresses, IP addresses, ports, and sockets.
+* TCP vs UDP, connection-oriented vs connectionless communication, reliability, sequencing, acknowledgments, and retransmissions.
+* TCP three-way handshake and four-way connection termination, with sequence diagrams.
+* TCP flags, connection states, common causes of connection failures, and SYN flood attacks.
+* IPv4 vs IPv6, public vs private IP addresses, static vs dynamic addressing, loopback, APIPA, and link-local addresses.
+* Subnet masks, CIDR notation, network IDs, broadcast addresses, usable host ranges, and basic subnetting calculations with solved examples.
+* MAC addresses, ARP, ARP tables, ARP spoofing, and gratuitous ARP fundamentals.
+* DNS resolution flow, recursive vs iterative queries, DNS records (A, AAAA, CNAME, MX, NS, TXT, PTR), caching, and DNS spoofing.
+* DHCP operation, DORA process, leases, and DHCP spoofing.
+* Routing, default gateways, routing tables, NAT, PAT, VLANs, subnetting, and network segmentation.
+* HTTP request-response flow, methods, status codes, headers, cookies, and sessions.
+* HTTP vs HTTPS, TLS handshake at a high level, certificates, certificate authorities, and encrypted communication.
+* SSL vs TLS and why SSL is obsolete.
+* Common protocols and ports: FTP, SFTP, SSH, Telnet, SMTP, POP3, IMAP, DNS, DHCP, HTTP, HTTPS, SNMP, LDAP, LDAPS, SMB, RDP, NTP, and Kerberos.
+* Firewalls, proxies, reverse proxies, VPNs, IDS, IPS, WAFs, load balancers, and packet filtering.
+* ICMP, ping, traceroute, packet capture, Wireshark, tcpdump, and basic network troubleshooting.
+* Network scanning, port states, service discovery, and Nmap fundamentals.
+* Common network attacks: sniffing, spoofing, MITM, replay attacks, session hijacking, DoS, DDoS, DNS poisoning, ARP poisoning, and rogue access points.
+* Wireless security, Wi-Fi encryption, WPA2 vs WPA3, and common wireless threats.
+* Zero Trust, defense in depth, network access control, and secure network architecture.
+
+## 3. Cybersecurity Fundamentals
+
+* Cybersecurity vs information security vs network security.
+* CIA Triad: confidentiality, integrity, and availability.
+* Authentication, authorization, accounting, auditing, and non-repudiation.
+* Threats, vulnerabilities, exploits, risks, attack vectors, attack surfaces, and security incidents.
+* Threat actors, motivations, attack objectives, and common threat actor categories.
+* Security controls: preventive, detective, corrective, deterrent, compensating, and recovery controls.
+* Administrative, technical, and physical controls.
+* Least privilege, defense in depth, separation of duties, secure defaults, and fail-safe design.
+* Risk assessment, likelihood, impact, risk treatment, and residual risk.
+* Symmetric vs asymmetric encryption, with examples such as AES and RSA.
+* Encryption vs hashing vs encoding vs tokenization.
+* Hash functions, SHA-256, password hashing, salting, key stretching, and why passwords should not be stored in plaintext.
+* Digital signatures, digital certificates, public/private keys, PKI, certificate authorities, and certificate validation.
+* Key exchange, Diffie–Hellman, HMAC, and message integrity.
+* TLS, secure key management, secrets management, and certificate expiration.
+* Authentication methods, password security, MFA, biometrics, passkeys, and passwordless authentication.
+* Security awareness, social engineering, phishing, spear phishing, whaling, vishing, smishing, pretexting, baiting, and tailgating.
+* Malware: viruses, worms, trojans, ransomware, spyware, adware, rootkits, keyloggers, botnets, and fileless malware.
+* Password attacks: brute force, dictionary attacks, password spraying, credential stuffing, and offline hash cracking.
+* Web attacks: SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), server-side request forgery (SSRF), command injection, path traversal, and broken access control.
+* Network attacks: MITM, sniffing, spoofing, replay, session hijacking, DoS, and DDoS.
+* Zero-day vulnerabilities, exploits, privilege escalation, persistence, lateral movement, and data exfiltration.
+* OWASP Top 10: explain the current edition's categories and one-line meanings, along with examples and mitigations for the most relevant risks.
+* Firewall vs IDS vs IPS vs WAF vs EDR.
+* VPN fundamentals, endpoint security, antivirus, application allowlisting, and patch management.
+* Vulnerability scanning vs penetration testing vs security auditing.
+* CVE, CVSS, CWE, vulnerability disclosure, remediation, and vulnerability lifecycle.
+* Threat modeling, STRIDE, attack trees, and secure-by-design principles.
+* Security policies, standards, procedures, incident response, and disaster recovery.
+* NIST Cybersecurity Framework, ISO 27001, and essential governance, risk, and compliance terminology.
+* Ethical hacking, authorized testing, responsible disclosure, and rules of engagement.
+
+## 4. Identity and Access Management (IAM)
+
+### IAM Core Concepts
+
+* Identity, digital identity, account, principal, identity provider, service account, and machine identity.
+* Authentication vs authorization vs accounting.
+* Identity lifecycle: provisioning, deprovisioning, account management, and access reviews.
+* Least privilege, separation of duties, privileged access management (PAM), and just-in-time access.
+* Role-based access control (RBAC), attribute-based access control (ABAC), and discretionary vs mandatory access control.
+* Access control lists (ACLs), permissions, groups, policies, and entitlements.
+* Human identities vs workload identities and service principals.
+
+### Authentication Fundamentals
+
+* Password-based authentication, MFA, OTP, TOTP, hardware security keys, biometrics, and passkeys.
+* Password storage, salting, hashing, lockout policies, rate limiting, and account recovery.
+* Authentication factors: something you know, have, and are.
+* Federation, trust relationships, identity providers, and service providers.
+* Authentication protocols and flows at a conceptual level.
+* OAuth 2.0 vs OpenID Connect vs SAML, including their purposes and typical flows.
+* Access tokens, ID tokens, refresh tokens, scopes, claims, and JWT structure.
+* Session management, token expiration, revocation, secure cookies, and common token attacks.
+
+### Directory Services and Single Sign-On
+
+* Active Directory, LDAP, Kerberos, domain controllers, domains, forests, and organizational units.
+* LDAP vs LDAPS, Kerberos tickets, and ticket-based authentication.
+* Windows authentication fundamentals and NTLM vs Kerberos.
+* Single Sign-On (SSO), its workflow, benefits, limitations, and security considerations.
+* Identity federation, SAML-based SSO, and OIDC-based SSO.
+* Common IAM threats: credential theft, privilege escalation, over-permissioned accounts, token theft, and misconfigured access policies.
+* IAM security best practices, conditional access, access reviews, and audit logging.
+
+## 5. Artificial Intelligence and Machine Learning Fundamentals
+
+### Core Machine Learning
+
+* AI vs ML vs deep learning vs generative AI.
+* Supervised, unsupervised, semi-supervised, and reinforcement learning.
+* Classification, regression, clustering, and dimensionality reduction.
+* Training, validation, and test datasets.
+* Features, labels, parameters, hyperparameters, and model inference.
+* Data preprocessing, normalization, standardization, feature engineering, and missing data.
+* Overfitting, underfitting, bias-variance trade-off, and regularization.
+* Model evaluation: accuracy, precision, recall, F1-score, confusion matrix, ROC, and AUC.
+* Class imbalance, cross-validation, data leakage, and concept drift.
+* Decision trees, random forests, logistic regression, k-means, and basic anomaly detection.
+* Feature importance, explainability, and model limitations.
+
+### Deep Learning and Neural Networks
+
+* Neurons, weights, biases, activation functions, and layers.
+* Input, hidden, and output layers.
+* Forward propagation, loss functions, backpropagation, and gradient descent.
+* Learning rate, epochs, batch size, and optimizers.
+* CNNs, RNNs, LSTMs, and Transformers at a conceptual level.
+* Embeddings, attention mechanisms, and self-attention.
+* GPU acceleration and the fundamentals of model training.
+
+### Generative AI and LLMs
+
+* Generative AI, large language models (LLMs), tokens, tokenization, and context windows.
+* Transformer architecture and attention at a high level.
+* Pretraining, fine-tuning, instruction tuning, and inference.
+* Prompt engineering, system prompts, hallucinations, and grounding.
+* Retrieval-augmented generation (RAG), embeddings, vector databases, and semantic search.
+* LLM agents, tool calling, and function calling.
+* RAG vs fine-tuning and when each is useful.
+* Temperature, top-k, top-p, and output generation fundamentals.
+* LLM evaluation, guardrails, model limitations, and data privacy.
+* Prompt injection, jailbreaks, sensitive information disclosure, insecure tool use, and excessive agency.
+* OWASP Top 10 for LLM applications and AI security risks.
+
+### AI in Cybersecurity
+
+* ML-based spam and phishing detection.
+* Malware classification and behavioral analysis.
+* Intrusion detection and anomaly detection.
+* User and entity behavior analytics (UEBA).
+* Threat intelligence enrichment and security log analysis.
+* AI-assisted SOC workflows, alert triage, and incident investigation.
+* False positives, false negatives, adversarial examples, and model evasion.
+* Poisoning attacks, data integrity, model theft, and privacy risks.
+* AI-generated phishing, deepfakes, and automated social engineering.
+* Safe and responsible use of AI tools in security operations.
+
+## 6. DevOps Fundamentals
+
+### Git and Version Control
+
+* Version control and distributed version control.
+* Git vs GitHub/GitLab/Bitbucket.
+* Repository, working directory, staging area, commits, branches, and tags.
+* Essential commands: init, clone, status, add, commit, log, diff, fetch, pull, push, and checkout/switch.
+* Merge vs rebase, merge conflicts, pull requests, and code reviews.
+* .gitignore, secrets accidentally committed to Git, and secure repository practices.
+* Branch protection, commit history, and collaborative workflows.
+
+### Bash, Python, and Automation
+
+* Variables, data types, operators, conditionals, loops, functions, and error handling.
+* Reading files, processing text, working with JSON and CSV, and handling command-line arguments.
+* Bash commands: pwd, ls, cd, cat, grep, find, awk, sed, sort, uniq, chmod, chown, ps, top, kill, curl, and pipes/redirection.
+* Python scripting for log parsing, API requests, automation, and basic security tasks.
+* Regular expressions, subprocesses, environment variables, exit codes, and exception handling.
+* File permissions, safe command execution, input validation, and secret handling.
+* Automating repetitive tasks without exposing credentials or damaging production systems.
+
+### CI/CD and DevSecOps
+
+* Continuous integration vs continuous delivery vs continuous deployment.
+* CI/CD pipeline stages: source, build, test, scan, package, deploy, and monitor.
+* Build artifacts, dependencies, runners, deployment environments, and rollback.
+* Unit tests, integration tests, and automated quality checks.
+* SAST, DAST, software composition analysis (SCA), secret scanning, and container scanning.
+* Software bills of materials (SBOMs), dependency vulnerabilities, and supply-chain security.
+* Pipeline security, least privilege, protected secrets, and artifact integrity.
+* Infrastructure as Code (IaC), configuration management, and policy as code.
+* DevSecOps principles and integrating security early into the development lifecycle.
+
+### Docker and Containers
+
+* Containers vs virtual machines.
+* Images, containers, registries, Dockerfiles, volumes, networks, and container runtimes.
+* Basic Docker commands and image build/run lifecycle.
+* Container isolation, namespaces, cgroups, and layered filesystems at a high level.
+* Docker Compose fundamentals.
+* Container security: non-root users, minimal images, image scanning, secrets, and exposed ports.
+* Image provenance, trusted registries, and container misconfiguration.
+* Kubernetes fundamentals: clusters, nodes, pods, deployments, services, namespaces, and secrets.
+* Kubernetes security: RBAC, network policies, service accounts, admission controls, and workload security.
+
+### Cloud Computing Fundamentals
+
+* Cloud computing, virtualization, elasticity, scalability, availability, and fault tolerance.
+* IaaS vs PaaS vs SaaS.
+* Public vs private vs hybrid vs multi-cloud.
+* Regions, availability zones, and edge locations.
+* Shared responsibility model and cloud security responsibilities.
+* Compute, storage, networking, databases, and managed services.
+* Virtual machines, object storage, load balancers, and serverless computing.
+* Cloud IAM, roles, policies, temporary credentials, and least privilege.
+* Security groups, network ACLs, virtual networks, private subnets, and security boundaries.
+* Encryption at rest and in transit, KMS, secrets management, and key rotation.
+* Cloud logging, monitoring, auditing, backups, and incident response.
+* Misconfigured storage, exposed credentials, overly permissive IAM, and insecure APIs.
+* Cloud security posture management, workload protection, and cloud-native detection.
+* AWS, Microsoft Azure, and Google Cloud core concepts, with representative services.
+* Cloud-native security architecture and secure deployment practices.
+
+## 7. Essential Practical and Interview Topics
+
+* Explain what happens when you enter a URL into a browser, from DNS lookup to rendering the webpage.
+* Explain what happens when a client connects to a server using TCP and HTTPS.
+* Explain how a login works from password submission through authentication, session creation, and authorization.
+* Explain how SSO works across multiple applications.
+* Explain how a firewall, IDS, IPS, WAF, SIEM, and EDR differ and work together.
+* Explain how SQL injection and XSS work, how to identify the root cause, and how to prevent them.
+* Explain how to investigate a suspicious login, phishing email, malware alert, or unusual network connection.
+* Explain how to investigate a failed network connection using DNS checks, ping, traceroute, ports, and packet captures.
+* Explain how to identify and remediate a vulnerable dependency in a CI/CD pipeline.
+* Explain how to secure a Docker container and a cloud-hosted application.
+* Explain how AI/ML can detect suspicious behavior and what limitations those systems have.
+* Practice scenario-based questions that combine operating systems, networking, cybersecurity, IAM, cloud, and DevOps.
+* Include common technical interview questions, expected answer points, follow-up questions, and common mistakes.
+
+## Teaching and Output Format
+
+For each topic, follow this structure as appropriate:
+
+1. **Topic and definition**
+2. **How it works**, including a diagram or step-by-step flow when useful.
+3. **Practical example** or code/command/query where relevant.
+4. **Important differences** from related concepts.
+5. **Cybersecurity relevance** and common security risks.
+6. **Interview takeaway**: what I should be able to explain confidently.
+
+Do not force every subsection when it is irrelevant to the topic. Use judgment to keep explanations concise but complete.
+
+For diagrams, use readable ASCII diagrams or Mermaid flowcharts. For comparisons, use tables. For calculations and algorithms, show a worked example or dry run. For code, explain important lines and show expected output when practical.
+
+## Final Requirements
+
+* Follow the syllabus systematically and cover all sections.
+* Include missing prerequisite concepts whenever needed to understand a listed topic.
+* Do not omit essential technical interview concepts because they were not explicitly mentioned in the syllabus.
+* Do not go excessively deep into specialized topics unless they are important for a foundational technical round.
+* Avoid shallow, definition-only explanations for mechanisms that require understanding.
+* Finish each major section with a concise revision sheet, key comparisons, and a set of technical interview questions with answers.
+* Ask me questions only when clarification is genuinely necessary; otherwise, begin teaching immediately.
+* Start with **Section 1: Core Computer Science**, then proceed in syllabus order.
+* If the complete syllabus cannot fit into one response, teach it in clearly numbered parts and identify exactly which topics have been covered and which remain.
+* Prioritize understanding, technical accuracy, practical application, and the ability to explain concepts confidently under interview conditions.
